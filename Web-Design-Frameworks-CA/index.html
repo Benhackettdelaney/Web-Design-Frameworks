@@ -1,289 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Title</title>
-
-<link rel="stylesheet" href="css/main.css">
-
+	<title>Festible</title>
+	<link href="https://fonts.googleapis.com/css2?family=Nova+Round&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
 </head>
+<style>
+	body {
+		font-family: "Nova Round", sans-serif;
+	}
+</style>
+
 <body>
+	<!-- //nav bar// -->
+	<nav class="navbar navbar-expand-lg bg-success">
+		<div class="container-fluid">
+			<a class="navbar-brand text-dark fw-bold" href="#">Festible</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-8 ms-4">
+					<li class="nav-item">
+						<a class="nav-link text-dark " aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-dark">Festivals</a>
+					</li>
+				</ul>
+				<form class="d-flex align-items-center" role="search">
+					<input class="form-control me-2" type="search" placeholder="Search by artist" aria-label="Search">
+				</form>
+			</div>
+		</div>
+	</nav>
 
-	                           <!-- //nav bar// -->
-							   <nav class="navbar navbar-expand-lg bg-success">
-								<div class="container-fluid">
-								  <a class="navbar-brand text-dark fw-bold" href="#">Festible</a>
-								  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-									<span class="navbar-toggler-icon"></span>
-								  </button>
-								  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-									<ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-8 ms-4">
-									  <li class="nav-item">
-										<a class="nav-link text-dark " aria-current="page" href="#">Home</a>
-									  </li>
-									  <li class="nav-item">
-										<a class="nav-link text-dark">About</a>
-									  </li>
-									 
-									  <li class="nav-item">
-										<a class="nav-link text-dark">Festivals</a>
-									  </li>
-									</ul>
-								
-									<form class="d-flex align-items-center" role="search">
-									  <input class="form-control me-2" type="search" placeholder="Search by artist" aria-label="Search">
-									 
-										  
-									</form>
-								  </div>
-								</div>
-							  </nav>
+	<!-- log in and sign up  -->
+	<div class="card text-bg-dark">
+		<img src="images/trippy.jpg" class="card-img" alt="...">
+		<div class="card-img-overlay d-flex flex-column justify-content-center align-items-start">
+			<div class="col-12 col-md-8">
+				<h1 class="card-title display-4" >Log in or Sign up</h1>
+				<p class="h3" >Create an account to receive notifications on new
+					discounts, new events and
+					dates for any events that you may be interesting in.</p>
+				<p class="h3">Students can access exclusive discounts for events
+					if they
+					create an
+					account.
+				</p>
+				<p class="h3">Join now to be apart of the Festible family.</p>
+				<div class="mt-2 mt-md-5">
+					<button type="button" class="btn btn-success me-3 btn">Log in</button>
+					<button type="button" class="btn btn-success me-3 btn">Sign up</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-												<!-- log in and sign up  -->
-							  <div class="card text-bg-dark">
-								<img src="images/trippy.jpg" class="card-img" alt="...">
-								<div class="card-img-overlay d-flex flex-column justify-content-center align-items-start ">
-								  <h1 class="card-title display-1 fw-bold">Log in or Sign up</h1>
-								  <p class="card-text h3 mt-4">Create an account to receive notifications on new discounts, new events and dates for any events that you may be interesting in.</p>
-								  <p class="card-text h3 mt-4">Students can access exclusive discounts for events if they create an account.</p>
-								  <p class="card-text h3 mt-4">Join now to be apart of the Festible family.</p>
-								  <div class="">
-									<button type="button" class="btn btn-success me-3 btn-lg">Log in</button>
-									<button type="button" class="btn btn-success me-3 btn-lg">Sign up</button>
-								  </div>
-								</div>
-							  </div>
+	<!-- popular events -->
 
-											<!-- popular events -->
+	<div class="container-fluid bg-light p-2">
+		<div class="d-flex justify-content-between align-items-center p-2">
+			<div class=" d-flex align-items-center">
+				<img src="images/title-logo.png"  alt="...">
+				<span class='fs-2 ms-1'>Popular events</span>
+			</div>
+			<a href="#" class="card-link text-warning">view more</a>
+		</div>
 
-							  <div class="bg-light">
-                               <h1 class="mt-3 display-2">Popular events</h1>
-							   <a href="#" class="card-link text-warning">view more</a>	
-							   <div class="card-group">
-								<div class="card mx-2">
-								  <img src="images/ep_small.jpg" class="card-img-top h-100" alt="...">
-								  <div class="card-body">
-									<p class="card-text h5 text-center">Electric Picnic-now avaliable</p>
-								  </div>
-								</div>
-								
-								<div class="card mx-2">
-								  <img src="images/cochella-small.png" class="card-img-top h-100" alt="...">
-								  <div class="card-body">
-									<p class="card-text h5 text-center">Coachella-not avaliable</p>
-								  </div>
-								</div>
-								
-								<div class="card mx-2">
-								  <img src="images/tl-small.png" class="card-img-top h-100" alt="...">
-								  <div class="card-body ">
-									<p class="card-text h5 text-center">Tomorrowland-now avaliable</p>
-									</div>
-								</div>
-								  </div>
-							</div>
+		<div class="card-group">
+			<div class="card mx-2 shadow">
+				<img src="images/ep_small.jpg" class="card-img-top h-100" alt="...">
+				<div class="card-body">
+					<p class="card-text h5 text-center">Electric Picnic-now avaliable</p>
+				</div>
+			</div>
 
-											<!-- international events -->
+			<div class="card mx-2 shadow">
+				<img src="images/cochella-small.png" class="card-img-top h-100" alt="...">
+				<div class="card-body">
+					<p class="card-text h5 text-center">Coachella-not avaliable</p>
+				</div>
+			</div>
 
-							  <div class="bg-light">
-                               <h1 class="mt-3 display-2">International events</h1>
-							   <a href="#" class="card-link text-warning">view more</a>	
-							   <div class="card-group">
-								<div class="card mx-2">
-								  <img src="images/hideout-small.png" class="card-img-top h-100" alt="...">
-								  <div class="card-body">
-									<p class="text-muted">International Event</p>
-									<h1 class="card-text h5 ">Electric Picnic-now avaliable</h1>
-								<p class="h6">Hideout is based in Croatia stunning Zrce Beach. Think sun-soaked pool parties, immense boat…</p>  
-								<a href="#" class="card-link text-warning">view more</a>	
-							</div>
-								</div>
-								
-								<div class="card mx-2">
-								  <img src="images/glastonbury-small.png" class="card-img-top h-100" alt="...">
-								  <div class="card-body">
-									<p class="text-muted">International Event</p>
-									<h1 class="card-text h5 ">Coachella-not avaliable</h1>
-								<p class="h6">Hideout is based in Croatia stunning Zrce Beach. Think sun-soaked pool parties, immense boat…</p>  
-								<a href="#" class="card-link text-warning">view more</a>	
-							</div>
-								</div>
-								
-								<div class="card mx-2">
-								  <img src="images/all-points-east-small.png" class="card-img-top h-100" alt="...">
-								  <div class="card-body ">
-									<p class="text-muted">International Event</p>
-									<h1 class="card-text h5 ">Tomorrowland-now avaliable</h1>
-								<p class="h6" >Hideout is based in Croatia stunning Zrce Beach. Think sun-soaked pool parties, immense boat…</p>	
-								<a href="#" class="card-link text-warning">view more</a>	
-							</div>
-								</div>
-								  </div>
-							</div>
+			<div class="card mx-2 shadow">
+				<img src="images/tl-small.png" class="card-img-top h-100" alt="...">
+				<div class="card-body ">
+					<p class="card-text h5 text-center">Tomorrowland-now avaliable</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
-								<!-- Festivals in Ireland-->
+	<!-- international events -->
 
-								<div class="card text-bg-dark">
-								<img src="images/longitude-main.png" class="card-img" alt="...">
-								<div class="card-img-overlay d-flex flex-column justify-content-center align-items-left mt-5  ">
-								  <h1 class="card-title display-2 fw-bold text-left">Festivals in Ireland</h1>
-								  <p class="card-text h3 mt-4 text-">Lorem ipsum dolor sit amet consectetur. Sit ultrices accumsan commodo vehicula orci a eros. Turpis turpis id blandit auctor enim sed risus. Integer enim tellus sed eu. Aliquet sollicitudin sit varius morbi metus. Dictumst ante donec sit dolor cursus ac. Mauris aenean est volutpat et.</p>
-								  
-								 </div>
-							  </div>
+	<div class="container-fluid bg-light p-2">
+		<div class="d-flex justify-content-between align-items-center p-2">
+			<div class="d-flex align-items-center">
+				<img src="images/title-logo.png" alt="...">
+				<span class='fs-2 ms-1'>International events</span>
+			</div>
+			<a href="#" class="card-link text-warning">view more</a>
+		</div>
+		<div class="card-group">
+			<div class="card mx-2 shadow">
+				<img src="images/hideout-small.png" class="card-img-top h-100" alt="...">
+				<div class="card-body">
+					<p class="text-muted">International Event</p>
+					<h1 class="card-text h5 ">Electric Picnic-now avaliable</h1>
+					<p class="h6">Hideout is based in Croatia stunning Zrce Beach. Think sun-soaked pool parties,
+						immense boat…</p>
+					<a href="#" class="card-link text-warning">view more</a>
+				</div>
+			</div>
 
-							  <!-- Social Media's -->
-							  <div class="bg-light text-dark">
-								<h1 class="mt-3 display-2">Social Media's</h1>
-								<img src="images/twitter-logo.png" class="col-2 text-align-bottom" alt="...">
-								<a href="#" class="card-link text-warning">Fesible@twitter.com</a>
-								<img src="images/reddit-logo.png" class="col-2" alt="...">
-								<a href="#" class="card-link text-warning">Fesible@reddit.com</a>
-								<img src="images/facebook-logo.png" class="col-2" alt="...">
-								<a href="#" class="card-link text-warning">Fesible@facebook.com</a>
-								<img src="images/whatsapp-logo.png" class="col-2" alt="...">
-								<a href="#" class="card-link text-warning">0854567892</a>
-								<img src="images/insta-logo.png" class="col-2" alt="...">
-								<a href="#" class="card-link text-warning">Fesible@instagram.com</a>
-								<img src="images/sc-logo.png" class="col-2" alt="...">
-								<a href="#" class="card-link text-warning">Fesible.SC</a>
-							  </div>
+			<div class="card mx-2 shadow">
+				<img src="images/glastonbury-small.png" class="card-img-top h-100" alt="...">
+				<div class="card-body">
+					<p class="text-muted">International Event</p>
+					<h1 class="card-text h5 ">Coachella-not avaliable</h1>
+					<p class="h6">Hideout is based in Croatia stunning Zrce Beach. Think sun-soaked pool parties,
+						immense boat…</p>
+					<a href="#" class="card-link text-warning">view more</a>
+				</div>
+			</div>
 
-							  <!-- monthly users -->
-							  	<div class="bg-danger">
-									<h3 class="flex-column justify-content-center align-text-center">Monthly users and other statistics</h3>
-									<div class="row">
-										<div class="col-4">
-											<h4 class="justify-content-center align-text-center">1000+</h4>
-											<p class="justify-content-center align-text-center">New uesers we reviece monthly for festivals.</p>
-										</div>
-										<div class="col-4">
-											<h4 class="justify-content-center align-text-center">60+</h4>
-											<p class="justify-content-center align-text-center">Festival tickets avaliable for purchase, buy now before they’re gone.</p>
-										</div>
-										<div class="col-4">
-											<h4 class="justify-content-center align-text-center">50+</h4>
-											<p class="justify-content-center align-text-center">Global staff members who will assit with any issues.</p>
-										</div>
-									</div>
-								</div>
+			<div class="card mx-2 shadow">
+				<img src="images/all-points-east-small.png" class="card-img-top h-100" alt="...">
+				<div class="card-body ">
+					<p class="text-muted">International Event</p>
+					<h1 class="card-text h5 ">Tomorrowland-now avaliable</h1>
+					<p class="h6">Hideout is based in Croatia stunning Zrce Beach. Think sun-soaked pool parties,
+						immense boat…</p>
+					<a href="#" class="card-link text-warning">view more</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
-												<!-- artists -->
-												<div class="card text-bg-dark">
-													<img src="images/jwrld-main.png" class="card-img" alt="...">
-													<div class="card-img-overlay d-flex flex-column justify-content-center align-items-left mt-5  ">
-													  <h1 class="card-title display-2 fw-bold text-left">Artists from a handful of our festivals </h1>
-													  <p class="card-text h3 mt-4 text-">Lorem ipsum dolor sit amet consectetur. Aenean vestibulum rutrum aliquam i dolor vitae morbi nunc tortor magnis elementum.
-														n ultrices magnis elementum.elementum.</p>
-													  
-													 </div>
-												  </div>
+	<!-- Festivals in Ireland-->
+	<div class="container-fluid card border-0 my-5">
+		<img src="images/longitude-main.png" class="card-img" alt="...">
+		<div
+			class="card-img-overlay d-flex flex-column justify-content-center align-items-left p-1 p-md-5 col-12 col-md-9">
+			<h2 class="card-title fw-bold text-left text-white display-4">Festivals in Ireland</h2>
+			<p class="h3 text-light" >Lorem ipsum dolor sit amet consectetur.
+				Sit
+				ultrices accumsan commodo
+				vehicula orci a eros. Turpis turpis id blandit auctor enim sed risus. Integer enim tellus sed eu.
+				Aliquet sollicitudin sit varius morbi metus. Dictumst ante donec sit dolor cursus ac.
+			</p>
+		</div>
+	</div>
 
-												  <!-- student discounts -->
-												  <div class="card text-bg-light">
-													<h1 class="card-title display-2 fw-bold align-text-top text-center">Student Discounts  </h1>
-													<p class="card-text h3 mt-4 text-">Lorem ipsum dolor sit amet consectetur. Aenean vestibulum rutrum aliquam i dolor vitae morbi nunc tortor magnis elementum.
-														n ultrices magnis elementum.elementum.</p>
-													<img src="images/student-discounts.png" class="card-img" alt="...">
-													 <h1 class="card-title display-2 fw-bold align-text-top text-center">Sign up or log in and put in your student infomation and the discounts will be active </h1>
-													 <p class="card-text h3 mt-4 text-">Click now to receive these benefits, users will have to make an account with the website to have these discounts</p>
-													 </div>
-												  </div>
 
-												  <!-- wrist bands -->
-												  <div class="card text-bg-dark">
-													<img src="images/wrist-bands.png" class="card-img" alt="...">
-													<div class="card-img-overlay d-flex flex-column justify-content-right align-items-right mt-5  ">
-													  <h1 class="card-title display-2 fw-bold align-items-right">Wrist Bands </h1>
-													  <p class="card-text h3 mt-4 align-items-right">Buy a wrist band which you can top up with money to be used to purchase food and drinks at the event. All wrist bands can be used in any event that we have our our website, they’re also reusable.</p>
-													  <button type="button" class="btn btn-success me-3 btn-lg text-light">Buy now</button>
-													 </div>
-												  </div>
+	<!-- Social Media's -->
+	<div class="container-fluid my-4">
+		<div class="d-flex justify-content-between align-items-center p-2">
+			<div class="d-flex align-items-center">
+				<img src="images/title-logo.png"  alt="...">
+				<span class='fs-2 ms-1'>Social Media's</span>
+			</div>
+			<a href="#" class="card-link text-warning">view more</a>
+		</div>
+		<div class="row g-4">
+			<!-- Counter item -->
+			<div class="col-sm-6 col-xl-4">
+				<div class="d-flex justify-content-center align-items-center p-2 rounded-3 border">
+					<img src="images/twitter-logo.png" alt="...">
+					<a href="#" class="card-link text-warning">Fesible@twitter.com</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-xl-4">
+				<div class="d-flex justify-content-center align-items-center p-2 rounded-3 border">
+					<img src="images/reddit-logo.png" alt="...">
+					<a href="#" class="card-link text-warning">Fesible@reddit.com</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-xl-4">
+				<div class="d-flex justify-content-center align-items-center p-2 rounded-3 border">
+					<img src="images/facebook-logo.png" alt="...">
+					<a href="#" class="card-link text-warning">Fesible@facebook.com</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-xl-4">
+				<div class="d-flex justify-content-center align-items-center p-2 rounded-3 border">
+					<img src="images/whatsapp-logo.png" alt="...">
+					<a href="#" class="card-link text-warning">0854567892</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-xl-4">
+				<div class="d-flex justify-content-center align-items-center p-2 rounded-3 border">
+					<img src="images/insta-logo.png" alt="...">
+					<a href="#" class="card-link text-warning">Fesible@instagram.com</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-xl-4">
+				<div class="d-flex justify-content-center align-items-center p-2 rounded-3 border">
+					<img src="images/sc-logo.png" alt="...">
+					<a href="#" class="card-link text-warning">Fesible.SC</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
-												  <!-- images of festivals -->
-												  <div class="card text-bg-dark">
-													<img src="images/ep-main.png" class="card-img" alt="...">
-													<div class="card-img-overlay d-flex flex-column justify-content-center align-items-left mt-5  ">
 
-													</div>
-													  
-													<!-- reviews -->
-													<div class="bg-light">
-													<div class="card" > 
-														<div class="row">
-															<div class="col-3"
-														<div class="card-body">
-														  <h5 class="card-title text-dark">Usability</h5>
-														  <h6 class="card-subtitle mb-2  text-dark">The website was great and easy to use, i had a great time with it...</h6>
-														  <p class="card-text text-dark" >anonymous-4 days ago</p>
-														  <a href="#" class="card-link text-warning">View more</a>
-														</div>
-													  
-													  <div class="col-3"
-													  <div class="card" >
-														<div class="card-body">
-														  <h5 class="card-title text-dark">WOW!</h5>
-														  <h6 class="card-subtitle mb-2  text-dark">This website saved my whole marriage thank you!!!...</h6>
-														  <p class="card-text text-dark" >anonymous-3 hours ago</p>
-														  <a href="#" class="card-link text-warning">View more</a>
-														</div>
-													  </div>
-													  <div class="col-3"
-													  <div class="card" >
-														<div class="card-body">
-														  <h5 class="card-title text-dark">Review</h5>
-														  <h6 class="card-subtitle mb-2  text-dark">I am pleasantly surprised, i was expecting the same generic site but what I have seen ...</h6>
-														  <p class="card-text text-dark" >Buzzfeed-5 days ago</p>
-														  <a href="#" class="card-link text-warning">View more</a>
-														</div>
-													  </div>
-														<div class="col-3"
-													  <div class="card" >
-														<div class="card-body">
-														  <h5 class="card-title text-dark">Dissappointed</h5>
-														  <h6 class="card-subtitle mb-2  text-dark">The site didn’t suit my needs as someone who likes websites..</h6>
-														  <p class="card-text text-dark" >anonymous-2 minutes ago</p>
-														  <a href="#" class="card-link text-warning">View more</a>
-														</div>
-													  </div>
-													</div>
-												</div>
-												</div>
 
-												<div class="bg-light">
-													<div class="row">
-														<div class="col-4">
-															<img src="images/twitter-logo.png" class="card-img" alt="...">
-															<p class="text-dark">4.7/5 Ratings</p>
-														</div>
-														<div class="col-4">
-															<img src="images/facebook-logo.png" class="card-img" alt="...">
-															<p class="text-dark">4.5/5 Ratings</p>
-														</div>
-														<div class="col-4">
-															<img src="images/google-logo.png" class="card-img" alt="...">
-															<p class="text-dark">4.9/5 Ratings</p>
-														</div>
-													</div>
-												</div>
+	<!-- monthly users -->
+	<div class="container-fluid bg-danger bg-opacity-10 p-3">
+		<h2 class="display-5 text-center my-5">Monthly users and other statistics</h2>
+		<div class="row g-4">
+			<div class="col-12 col-md-4">
+				<div class="d-flex justify-content-center align-items-center p-4 rounded-3">
+					<div class="text-center">
+						<h5 class="mb-0 fw-bold display-5">1000+</h5>
+						<p class="mb-0">New users we reviece monthly for festivals</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<div class="d-flex justify-content-center align-items-center p-4 rounded-3">
+					<div class="text-center">
+						<h5 class="mb-0 fw-bold display-5">60+</h5>
+						<p class="mb-0">Festival tickets avaliable for purchase, buy
+							now
+							before they’re gone.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<div class="d-flex justify-content-center align-items-center p-4  rounded-3">
+					<div class="text-center">
+						<h5 class="mb-0 fw-bold display-5">150+</h5>
+						<p class="mb-0">Global staff members who will assit with any
+							issues.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-												<!-- footer -->
-												<div class="card bg-success text-center">
-													<div class="card-header">
-													  Featured
-													</div>
-													<div class="card-body">
-													  <h5 class="card-title">Special title treatment</h5>
-													  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-													  <a href="#" class="btn btn-primary">Go somewhere</a>
-													</div>
-												
-												  </div>
-												
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
-crossorigin="anonymous"></script>
+	<!-- artists -->
+	<div class="card text-bg-dark">
+		<img src="images/jwrld-main.png" class="card-img" alt="...">
+		<div class="col-12 col-md-8 card-img-overlay d-flex flex-column justify-content-center align-items-left mt-5  ">
+			<h1 class="card-title fw-bold text-left display-4" >Artists from a handful of our
+				festivals </h1>
+			<p class="h4">Lorem ipsum dolor sit amet consectetur. Aenean vestibulum
+				rutrum
+				aliquam
+				i dolor vitae morbi nunc tortor magnis elementum.
+				n ultrices magnis elementum.elementum.
+			</p>
+		</div>
+	</div>
+
+	<!-- student discounts -->
+	<div class="container py-5">
+		<h2 class="card-title display-2 fw-bold align-text-top text-center">Student Discounts </h2>
+		<p class="card-text h3 mt-4 text-">Lorem ipsum dolor sit amet consectetur. Aenean vestibulum rutrum aliquam i
+			dolor vitae morbi nunc tortor magnis elementum.
+			n ultrices magnis elementum.elementum.</p>
+		<img src="images/student-discounts.png" class="card-img" alt="...">
+		<h3 class="card-title fw-bold align-text-top text-center display-5 mt-5">Sign up or log in and put in your
+			student
+			infomation and the discounts will be active </h3>
+		<p class="card-text h3 mt-4 text-center">Click now to receive these benefits, users will have to make an account
+			with
+			the website to have these discounts</p>
+	</div>
+	</div>
+
+	<!-- wrist bands -->
+
+	<div class="card my-5 border-0">
+		<img src="images/wrist-bands.png" class="card-img" alt="...">
+		<div class="card-img-overlay">
+			<div class="row">
+				<div class="col-8">
+				</div>
+				<div class="col-4 text-black">
+					<h1 >Wrist Bands</h1>
+					<p class="h5"" >Buy a wrist band which you can top up with money
+						to
+						be used
+						to purchase food and drinks at the event. All wrist bands can be used in any event that we have
+						our
+						our
+						website, they’re also reusable.</p>
+					<button type="button" class="btn btn-success me-3 btn text-light">Buy</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- images of festivals -->
+	<div class="container-fluid">
+		<img src="images/ep-main.png" class="card-img" alt="...">
+		<div class="card-img-overlay d-flex flex-column justify-content-center align-items-left mt-5  ">
+		</div>
+	</div>
+
+	<!-- reviews -->
+	<div class="container-fluid">
+		<div class="d-flex justify-content-between align-items-center p-2">
+			<div class="d-flex align-items-center">
+				<img src="images/title-logo.png" alt="...">
+				<span class='fs-2 ms-1'>Reviews</span>
+			</div>
+			<a href="#" class="card-link text-warning">view more</a>
+		</div>
+		<div class="card border-0">
+			<div class="row">
+				<div class="col-12 col-md-3">
+					<div class="card-body shadow-sm">
+						<h5 class="card-title text-dark display-6">Usability</h5>
+						<h6 class="card-subtitle mb-2  text-dark display-7">The website was great and easy to use, i had a
+							great
+							time with it....</h6>
+						<p class="h5">anonymous-3 hours ago</p>
+						<a href="#" class="card-link text-warning">View more</a>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-3">
+					<div class="card-body shadow-sm">
+						<h5 class="card-title text-dark display-6">WOW!</h5>
+						<h6 class="card-subtitle mb-2  text-dark">This website saved my whole marriage thank
+							you!!!...</h6>
+						<p class="card-text text-dark ">anonymous-3 hours ago</p>
+						<a href="#" class="card-link text-warning">View more</a>
+					</div>
+				</div>
+				<div class="col-12 col-md-3">
+					<div class="card-body shadow-sm">
+						<h5 class="card-title text-dark display-6">Review</h5>
+						<h6 class="card-subtitle mb-2  text-dark">I am pleasantly surprised, i was expecting the
+							same generic site but what I have seen ...</h6>
+						<p class="card-text text-dark">Buzzfeed-5 days ago</p>
+						<a href="#" class="card-link text-warning">View more</a>
+					</div>
+				</div>
+				<div class="col-12 col-md-3">
+					<div class="card-body shadow-sm">
+						<h5 class="card-title text-dark display-6">Dissappointed</h5>
+						<h6 class="card-subtitle mb-2  text-dark">The site didn’t suit my needs as someone who likes
+							websites..</h6>
+						<p class="card-text text-dark">anonymous-2 minutes ago</p>
+						<a href="#" class="card-link text-warning">View more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid bg-danger bg-opacity-10 p-3">
+		<div class="row align-items-center">
+			<div class="col-12 col-md-4">
+				<div class="d-flex justify-content-center align-items-center p-4 rounded-3">
+					<div class="text-center">
+						<img src="images/twitter-logo.png" class="card-img" alt="...">
+						<p class="text-dark">4.7/5 Ratings</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<div class="d-flex justify-content-center align-items-center p-4 rounded-3">
+					<div class="text-center">
+						<img src="images/facebook-logo.png" class="card-img" alt="...">
+						<p class="text-dark">4.5/5 Ratings</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-4">
+				<div class="d-flex justify-content-center align-items-center p-4  rounded-3">
+					<div class="text-center">
+						<img src="images/google-logo.png" class="card-img" alt="...">
+						<p class="text-dark">4.9/5 Ratings</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div class="container-fluid bg-success">
+		<div class="row text-center p-4">
+			<!-- Link block -->
+			<div class="col-12 col-md-4">
+				<h5 class="mb-2 mb-md-4">Help</h5>
+				<ul class="nav flex-column">
+					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">About us</a></li>
+					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">Contact us</a></li>
+					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">News and Blogs</a></li>
+					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">Library</a></li>
+					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">Career</a></li>
+				</ul>
+			</div>
+
+			<!-- Link block -->
+			<div class="col-12 col-md-4">
+				<h5 class="mb-2 mb-md-4">About Us</h5>
+				<ul class="nav flex-column">
+					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">Documentation</a></li>
+					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">Faq</a></li>
+					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">Forum</a></li>
+					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">Sitemap</a></li>
+				</ul>
+			</div>
+
+			<!-- Link block -->
+			<div class="col-12 col-md-4">
+				<h5 class="mb-2 mb-md-4">Resources</h5>
+				<ul class="nav flex-column">
+					<li class="nav-item "><a class="nav-link card-link text-warning" href="#">Become a teacher</a></li>
+					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">How to guide</a></li>
+					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">Terms &amp; Conditions</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+		crossorigin="anonymous"></script>
 </body>
+
 </html>
