@@ -50,10 +50,10 @@
 		<div class="card-img-overlay d-flex flex-column justify-content-center align-items-start">
 			<div class="col-12 col-md-8">
 				<h1 class="card-title display-4" >Log in or Sign up</h1>
-				<p class="h3" >Create an account to receive notifications on new
+				<p class="h3 d-none d-md-block" >Create an account to receive notifications on new
 					discounts, new events and
 					dates for any events that you may be interesting in.</p>
-				<p class="h3">Students can access exclusive discounts for events
+				<p class="h3 d-none d-md-block">Students can access exclusive discounts for events
 					if they
 					create an
 					account.
@@ -153,8 +153,9 @@
 		<img src="images/longitude-main.png" class="card-img" alt="...">
 		<div
 			class="card-img-overlay d-flex flex-column justify-content-center align-items-left p-1 p-md-5 col-12 col-md-9">
-			<h2 class="card-title fw-bold text-left text-white display-4">Festivals in Ireland</h2>
-			<p class="h3 text-light" >Lorem ipsum dolor sit amet consectetur.
+			<h2 class="card-title fw-bold text-left text-white text-center d-sm-none">Festivals in Ireland</h2>
+			<h2 class="card-title fw-bold text-left text-white display-4 d-none d-sm-block">Festivals in Ireland</h2>
+			<p class="h3 text-light d-none d-sm-block" >Lorem ipsum dolor sit amet consectetur.
 				Sit
 				ultrices accumsan commodo
 				vehicula orci a eros. Turpis turpis id blandit auctor enim sed risus. Integer enim tellus sed eu.
@@ -253,10 +254,12 @@
 	<!-- artists -->
 	<div class="card text-bg-dark">
 		<img src="images/jwrld-main.png" class="card-img" alt="...">
-		<div class="col-12 col-md-8 card-img-overlay d-flex flex-column justify-content-center align-items-left mt-5  ">
-			<h1 class="card-title fw-bold text-left display-4" >Artists from a handful of our
+		<div class="col-12 col-md-8 card-img-overlay d-flex flex-column justify-content-center align-items-left mt-md-5">
+			<h1 class="card-title fw-bold text-left display-4 d-none d-md-block" >Artists from a handful of our
 				festivals </h1>
-			<p class="h4">Lorem ipsum dolor sit amet consectetur. Aenean vestibulum
+				<h4 class="card-title fw-bold text-center d-md-none" >Artists from a handful of our
+					festivals </h4>
+			<p class="h4 d-none d-md-block">Lorem ipsum dolor sit amet consectetur. Aenean vestibulum
 				rutrum
 				aliquam
 				i dolor vitae morbi nunc tortor magnis elementum.
@@ -284,12 +287,11 @@
 	<!-- wrist bands -->
 
 	<div class="card my-5 border-0">
-		<img src="images/wrist-bands.png" class="card-img" alt="...">
-		<div class="card-img-overlay">
 			<div class="row">
-				<div class="col-8">
+				<div class="col-md-6">
+					<img src="images/wrist-bands.png" class="card-img" alt="...">
 				</div>
-				<div class="col-4 text-black">
+				<div class="col-md-6 text-black">
 					<h1 >Wrist Bands</h1>
 					<p class="h5"" >Buy a wrist band which you can top up with money
 						to
@@ -300,7 +302,7 @@
 						website, they’re also reusable.</p>
 					<button type="button" class="btn btn-success me-3 btn text-light">Buy</button>
 				</div>
-			</div>
+			
 		</div>
 	</div>
 
