@@ -1,7 +1,11 @@
-$primary: rgb(255, 0, 242);
 $danger: #888888;
 $warning: #0838AA;
 $success: #9C7FDB;
+$primary: #B1362C;
+$bs-body-font-family: var(--bs-font-nova-square);
+$bs-title-font-family: var(--bs-font-rakkas);
+$bs-pink: #A5AEFF;
+$bs-orange: #EF6464;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../node_modules/bootstrap/scss/functions";
 

@@ -1,228 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festible</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nova+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <style>
+    body {
+      font-family: "Nova Round", sans-serif;
+    }
+  </style>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Festible</title>
-	<link href="https://fonts.googleapis.com/css2?family=Nova+Round&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/main.css">
-</head>
-<style>
-	body {
-		font-family: "Nova Round", sans-serif;
-	}
-</style>
-
-<body>
-	<!-- //nav bar// -->
-	<nav class="navbar navbar-expand-lg bg-success">
-		<div class="container-fluid">
-			<a class="navbar-brand text-dark fw-bold" href="#">Festible</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-8 ms-4">
-					<li class="nav-item">
-						<a class="nav-link text-dark " aria-current="page" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link text-dark">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link text-dark">Festivals</a>
-					</li>
-				</ul>
-				<form class="d-flex align-items-center" role="search">
-					<input class="form-control me-2" type="search" placeholder="Search by artist" aria-label="Search">
-				</form>
-			</div>
-		</div>
-	</nav>
-    
+  <body>
+    <!-- //nav bar// -->
+    <nav class="navbar navbar-expand-lg bg-success">
+      <div class="container-fluid">
+        <a class="navbar-brand text-dark fw-bold" href="#">Festible</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-8 ms-4">
+            <li class="nav-item">
+              <a class="nav-link text-dark" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark">Festivals</a>
+            </li>
+          </ul>
+          <form class="d-flex align-items-center" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search by artist"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
 
     <div class="card text-bg-dark">
-		<img src="images/ep-large.png" class="card-img" alt="...">
-		<div class="card-img-overlay d-flex flex-column justify-content-center align-items-start">
-			<div class="col-12 col-md-8">
-			
-			</div>
-		</div>
-	</div>
+      <img src="images/ep-large.png" class="card-img" alt="..." />
+      <div
+        class="card-img-overlay d-flex flex-column justify-content-center align-items-start"
+      >
+        <div class="col-12 col-md-8"></div>
+      </div>
+    </div>
 
     <!-- options -->
-   <div>
-    <div class="row">
-        <div class="col-1 col-2 ">
-            <p class="h5 ps-4 pt-5 ">Details</p>
+    <div>
+      <div class="row">
+        <div class="col-sm-1 col-md-2">
+          <p class="h5 d-none d-md-block ps-4 pt-4">Details</p>
         </div>
-        <div class="col-1 col-2">
-            <p class="h5 ps-2 pt-5">Location</p>
-    </div>
-    <div class="col-1 col-2">
-        <p class="h5 ps-2 pt-5">Reviews</p>
-   </div>
-    </div>
-	
-       <!-- button -->
+        <div class="col-sm-1 col-md-2">
+          <p class="h5 d-none d-md-block ps-4 pt-4">Location</p>
+        </div>
+        <div class="col-sm-1 col-md-2">
+          <p class="h5 d-none d-md-block ps-4 pt-4">Reviews</p>
+        </div>
+      </div>
 
-       <ul class="nav justify-content-end align-items">
+      <!-- button -->
+
+      <ul class="nav justify-content-end align-items py-3">
         <li class="nav-item">
-            <p class="h5 ps-5">From $90.00</p>
-            <a href="#" class="btn btn-success btn-lg active text-light me-5" role="button" aria-pressed="true">PURCHASE TICKETS</a>
-        </div>
+          <p class="h5 ps-5 ">From $90.00</p>
+          <a
+            href="#"
+            class="btn btn-success btn-lg active text-light me-5"
+            role="button"
+            aria-pressed="true"
+            >PURCHASE TICKETS</a
+          >
         </li>
-        
       </ul>
-     
 
-  <!-- details -->
-    <div class="col-12 col-md-8 px-5">
-     <p class="h5 py-2">Loais - Stradbally Hall</p>
-     <h1 class="card-title display-6 py-3" >Electric Picnic</h1>
-     <p class="h5">Lorem ipsum dolor sit amet consectetur. Feugiat et a ligula ut odio. Tincidunt vulputate enim diam at urna. Placerat lectus morbi risus phasellus pharetra. Feugiat in pretium nec vitae cras dignissim lorem cras. Dolor rutrum tincidunt phasellus etiam mattis fringilla rhoncus ligula id. Sodales morbi ridiculus tincidunt quisque.
-      In aenean erat risus orci dictum. Auctor pellentesque nibh in quam velit. In cras quisque pharetra tellus hendrerit bibendum bibendum. Nunc augue diam a viverra. Dignissim diam adipiscing ut malesuada habitant risus ac. Eu orci varius consequat in pharetra orci ut tempus tempus.</p>
-     </div>
+      <!-- details -->
+      <div class="col-12 col-md-8 px-5">
+        <p class="h5 py-2">Loais - Stradbally Hall</p>
+        <h1 class="card-title display-6 py-4">Electric Picnic</h1>
+        <p class="h5">
+          Lorem ipsum dolor sit amet consectetur. Feugiat et a ligula ut odio.
+          Tincidunt vulputate enim diam at urna. Placerat lectus morbi risus
+          phasellus pharetra. Feugiat in pretium nec vitae cras dignissim lorem
+          cras. Dolor rutrum tincidunt phasellus etiam mattis fringilla rhoncus
+          ligula id. Sodales morbi ridiculus tincidunt quisque. In aenean erat
+          risus orci dictum. Auctor pellentesque nibh in quam velit. In cras
+          quisque pharetra tellus hendrerit bibendum bibendum. Nunc augue diam a
+          viverra. Dignissim diam adipiscing ut malesuada habitant risus ac. Eu
+          orci varius consequat in pharetra orci ut tempus tempus.
+        </p>
+      </div>
 
-  
+      <!-- duration -->
+      <div class="col-12 col-md-8 px-5">
+        <h1 class="card-title display-6 py-4">Duration</h1>
+        <p class="h5 pe-3">4th-6rd of September 2023</p>
+      </div>
 
-        <!-- duration -->
+      <!-- artists -->
+      <div class="row">
         <div class="col-12 col-md-8 px-5">
-            <h1 class="card-title display-6 py-3" >Duration</h1>
-            <p class="h5 py-1">4th-6rd of September 2023</p>
-         
+          <h1 class="card-title display-6  py-4">Artist</h1>
+          <div class="row">
+            <div class="col-4 col-md-3">
+              <p class="h3 fw-bold">Day 1</p>
+              <p class="h5">Juice</p>
+              <p class="h5">Eazy E</p>
+              <p class="h5">Biggie</p>
+              <p class="h5">Tupac</p>
+            </div>
+            <div class="col-4 col-md-3">
+              <p class="h3 fw-bold">Day 2</p>
+              <p class="h5">Dean</p>
+              <p class="h5">M&M</p>
+              <p class="h5">Sour</p>
+              <p class="h5">Adele</p>
+            </div>
+            <div class="col-4 col-md-3">
+              <p class="h3 fw-bold">Day 3</p>
+              <p class="h5">Oprah</p>
+              <p class="h5">Polos</p>
+              <p class="h5">MF</p>
+              <p class="h5">Skeng</p>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- artists -->
-        <div class="col-12 col-md-8 px-5">
-            <div class="row">
-            <h1 class="card-title display-6 py-3" >Artist</h1>
-        
-        <div class="col-4 col-md-2">
-           
-                <p class="h5">Day 1</p>
-                <p class="h5">JuiceWrld</p>
-                <p class="h5">Eazy E</p>
-                <p class="h5">Biggie Small</p>
-                <p class="h5">Tupac</p>
-            
-        </div>
-        <div class="col-4 col-md-2">
-            
-                <p class="h5">Day 2</p>
-                <p class="h5">Jay-Z</p>
-                <p class="h5">Eminem</p>
-                <p class="h5">Coldplay</p>
-                <p class="h5">Adele</p>
-            
-        </div>
-        <div class="col-4 col-md-2">
-            
-            <p class="h5">Day 3</p>
-            <p class="h5">Oprah</p>
-            <p class="h5">Polo G</p>
-            <p class="h5">MF DOOM</p>
-            <p class="h5">Skeng</p>
-        
+      <!-- location -->
+      <div class="col-12 col-md-8 px-5">
+        <h1 class="card-title display-6 py-4">Location</h1>
+        <p class="m-0 mb-md-3 lh-sm">22-33 Stradbally Hall Laois A9724L</p>
+      </div>
+
+      <!-- location image -->
+      <img src="images/location.png" alt="..." class="img-thumbnail" />
+
+      <!-- additional info -->
+      <div class="col-12 col-md-8 px-5">
+        <h1 class="card-title display-6 py-4">Additional Details</h1>
+      </div>
+
+      <div class="col-12 col-md-8 py-4 px-5">
+        <h1 class="card-title display-8 py-4">Access Information</h1>
+        <p class="h5">
+          All tickets need to be displayed for security, have either you’re
+          physical ticket present or a digital ticket.
+        </p>
+      </div>
+      <div class="col-12 col-md-8 py-4 px-5">
+        <h1 class="card-title display-8">How Does it Work</h1>
+        <p class="h5">
+          Security will greet you at the entrance, they will check to see if
+          your ticket is valid and once it is comfirmed you willbe allowed to
+          enter.
+        </p>
+      </div>
+      <div class="col-12 col-md-8 px-5">
+        <h1 class="card-title display-8">Cancellation Policy</h1>
+        <p class="h5">No refunds or exchanges after purchase.</p>
+      </div>
+      <div class="col-12 col-md-8 py-4 px-5">
+        <h1 class="card-title display-8">Wrist Bands</h1>
+        <p class="h5">
+          Wrists bands can be purcansed at the festival or you can bring you’re
+          existing band if you already own one.
+        </p>
+      </div>
+
+      <!-- reviews -->
+      <div class="col-12 col-md-8 py-4 px-5">
+        <h1 class="card-title display-8">Reviews from the previous year</h1>
+      </div>
+
+      <div class="d-flex align-items-center px-5">
+        <img src="images/star-rating.png" alt="..." />
+        <span class="fs-0 ms-0 py-2">5.0(30 reviews)</span>
+      </div>
+      <div class="col-12 col-md-8 px-5">
+        <h3 class="card-title py-1">Eric Morningstar</h3>
+        <p class="h5 py-3">3rd of September 2022</p>
+        <p class="h5 py-3">
+          One of the best festivals i have been to in a very long time, the
+          atmosphere every day was electric and i can’t wait to go again.
+        </p>
+      </div>
+      <a
+        href="#"
+        class="px-5 card-link text-warning justify-content-center align-content-center"
+        >view more</a
+      >
     </div>
-        </div>
+
+    <!-- footer -->
+    <div class="container-fluid bg-success">
+      <div class="row text-center p-4">
+        <!-- Link block -->
+        <div class="col-12 col-md-4">
+          <h5 class="mb-2 mb-md-4">Help</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link card-link text-warning" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link card-link text-warning" href="#">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link card-link text-warning" href="#"
+                >News and Blogs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link card-link text-warning" href="#">Library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link card-link text-warning" href="#">Career</a>
+            </li>
+          </ul>
         </div>
 
-        <!-- location -->
-        <div class="col-12 col-md-8 px-5">
-            <h1 class="card-title display-6 py-3" >Location</h1>
-            <p class="m-0 mb-md-3 lh-sm" >22-33 Stradbally Hall Laois  A9724L</p>
+        <!-- Link block -->
+        <div class="col-12 col-md-4">
+          <h5 class="mb-2 mb-md-4">About Us</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link card-link text-warning" href="#"
+                >Documentation</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link card-link text-warning" href="#">Faq</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link card-link text-warning" href="#">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link card-link text-warning" href="#">Sitemap</a>
+            </li>
+          </ul>
         </div>
 
-        <!-- location image -->
-        <img src="images/location.png" alt="..." class="img-thumbnail">
-
-        <!-- additional info -->
-        <div class="col-12 col-md-8 px-5">
-            <h1 class="card-title display-6 py-4" >Additional Details</h1>
+        <!-- Link block -->
+        <div class="col-12 col-md-4">
+          <h5 class="mb-2 mb-md-4">Resources</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link card-link text-warning" href="#"
+                >Become a teacher</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link card-link text-warning" href="#"
+                >How to guide</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link card-link text-warning" href="#"
+                >Terms &amp; Conditions</a
+              >
+            </li>
+          </ul>
         </div>
-
-        <div class="col-12 col-md-8  py-4 px-5">
-            <h1 class="card-title display-8 py-4" >Access Information</h1>
-            <p class="h5">All tickets need to be displayed for security, have either you’re physical ticket present or a digital ticket.</p>
-        </div>
-        <div class="col-12 col-md-8  py-4 px-5">
-            <h1 class="card-title display-8 " >How Does it Work</h1>
-            <p class="h5">Security will greet you at the entrance, they will check to see if your ticket is valid and once it is comfirmed you willbe allowed to enter. </p>
-        </div>
-        <div class="col-12 col-md-8 px-5">
-            <h1 class="card-title display-8 " >Cancellation Policy</h1>
-            <p class="h5">No refunds or exchanges after purchase.</p>
-        </div>
-        <div class="col-12 col-md-8  py-4 px-5">
-            <h1 class="card-title display-8 " >Wrist Bands</h1>
-            <p class="h5">Wrists bands can be purcansed at the festival or you can bring you’re existing band if you already own one. </p>
-        </div>
-
-        <!-- reviews -->
-        <div class="col-12 col-md-8  py-4 px-5">
-            <h1 class="card-title display-8 " >Reviews from the previous year</h1>
-        </div>
-
-        <div class=" d-flex align-items-center px-5">
-            <img src="images/star-rating.png"  alt="...">
-            <span class='fs-0 ms-0 py-2'>5.0(30 reviews)</span>
-        </div>
-        <div class="col-12 col-md-8 px-5">
-            <h3 class="card-title py-1" >Eric Morningstar</h3>
-            <p class="h5 py-3">3rd of September 2022 </p>
-            <p class="h5 py-3">One of the best festivals i have been to in a very long time,  the atmosphere every day was electric and i can’t wait to go again. </p>
-        </div>
-        <a href="#" class=" px-5 card-link text-warning justify-content-center align-content-center py-5">view more</a>
+      </div>
     </div>
-        </div>
 
-        <!-- footer -->
-	<div class="container-fluid bg-success">
-		<div class="row text-center p-4">
-			<!-- Link block -->
-			<div class="col-12 col-md-4">
-				<h5 class="mb-2 mb-md-4">Help</h5>
-				<ul class="nav flex-column">
-					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">About us</a></li>
-					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">Contact us</a></li>
-					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">News and Blogs</a></li>
-					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">Library</a></li>
-					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">Career</a></li>
-				</ul>
-			</div>
-
-			<!-- Link block -->
-			<div class="col-12 col-md-4">
-				<h5 class="mb-2 mb-md-4">About Us</h5>
-				<ul class="nav flex-column">
-					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">Documentation</a></li>
-					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">Faq</a></li>
-					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">Forum</a></li>
-					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">Sitemap</a></li>
-				</ul>
-			</div>
-
-			<!-- Link block -->
-			<div class="col-12 col-md-4">
-				<h5 class="mb-2 mb-md-4">Resources</h5>
-				<ul class="nav flex-column">
-					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">Become a teacher</a></li>
-					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">How to guide</a></li>
-					<li class="nav-item"><a class="nav-link card-link text-warning" href="#">Terms &amp; Conditions</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-        
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-		crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
