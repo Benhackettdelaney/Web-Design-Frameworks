@@ -1,14 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Nova Square:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rakkas:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=nova+round:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=nova+square:wght@300;400;500;600;700&display=swap');
+// colours
 $danger: #888888;
 $warning: #0838AA;
 $success: #9C7FDB;
 $primary: #B1362C;
-$font-family-base: "Nova Square";
-$font-family-title: "Rakkas";
 $bs-pink: #A5AEFF;
 $bs-orange: #EF6464;
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "../node_modules/bootstrap/scss/functions";
+// fonts
+$font-nova-sq:  "Nova Square";
+$font-nova-r:  "Nova Round";
+// @import "../node_modules/bootstrap/scss/variables.scss";
+// @import "../node_modules/bootstrap/scss/Mixins.scss";
 
-// Globals
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/functions.scss";
+// @import "../node_modules/bootstrap/scss/Mixins.scss";
 $enable-shadows: false;
+$fonts: "Nova Round", "Rakkas", "Nova square",sans-serif;
+
+body {
+    font-family: $fonts;
+}
+
+.ff-nova-sq {
+    font-family: $font-nova-sq;
+}
+
+.ff-nova-r {
+    font-family: $font-nova-r;
+}
+
+.primary {
+    text: #B1362C;
+}
